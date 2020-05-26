@@ -1,0 +1,66 @@
+body {
+  background: #ecf0f1;
+}
+
+.prevention {
+  padding: 90px;
+}
+
+#m1-img {
+  height: 150px;
+  width: 150px;
+}
+
+.card {
+  width: 400px;
+  height: 300px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card .card-body p {
+  margin: 5px;
+}
+
+.prevention-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+.prevention-cont div {
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #m1-img {
+    height: 100px;
+    width: 100px;
+  }
+  .card {
+    width: 300px;
+  }
+  .prevention-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
